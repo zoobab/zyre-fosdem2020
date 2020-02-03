@@ -36,6 +36,8 @@ Slides
 ![07-midicast.png](07-midicast.png)
 ## Docker bridge architecture to simulate zyre nodes
 ![08-docker0.jpg](08-docker0.jpg)
+## Blink 2 LEDs with CH341A GPIOs and /sys/class/gpio
+![09-ch341a-gpio.jpg](09-ch341a-gpio.jpg)
 
 Videos
 ======
@@ -43,15 +45,21 @@ Videos
 * Rebooting the GL-AR150 cluster: https://www.youtube.com/watch?v=FV3zgVt9HHA
 * GL-AR150 blinken lichten: https://www.youtube.com/watch?v=3CRjeFdS4VY
 * OpenWRT Summit 2017 presentation "F* the cloud, stay local - OpenWrt Summit 2017": https://www.youtube.com/watch?v=6UxQmvl4aaY
+* This presentation at Fosdem2020: https://fosdem.org/2020/schedule/event/iotzyre/
 
 Links
 =====
 
+* http://www.zoobab.com/ch341-usb-spi-i2c-uart-isp-dongle
+* https://github.com/gschorcht/i2c-ch341-usb
 * https://github.com/zoobab/openwrt-zmq-packages
 * https://github.com/ZyreApps/DeMidi
 
 Demo
 ====
+
+Check the `demo` directory, and launch the 3 docker containers (led3, led5,
+controller) with the shell scripts:
 
 * Run 3 containers as slaves:
 ```
