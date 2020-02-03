@@ -1,7 +1,8 @@
 About
 =====
 
-Presentation "F* the cloud, stay local" at OpenWRT Summit 2017, Prague
+Presensation of Zyre: p2p messaging to fuck the cloud, Pieter Hintjens last IOT project
+FOSDEM 2020, Brussels, 02022020
 
 Slides
 ======
