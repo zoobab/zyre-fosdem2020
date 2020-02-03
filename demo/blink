@@ -1,0 +1,15 @@
+#!/bin/bash
+
+GPIONR="$LED"
+
+echo out > /sys/class/gpio/gpio$GPIONR/direction
+echo 0 > /sys/class/gpio/gpio$GPIONR/value
+
+while true; do
+    echo "gpio $GPIONR HIGH"
+    echo 1 > /sys/class/gpio/gpio$GPIONR/value
+    sleep 1
+    echo "gpio $GPIONR LOW"
+    echo 0 > /sys/class/gpio/gpio$GPIONR/value
+    sleep 1
+done

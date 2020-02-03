@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "Killing blink"
+kill -9 $(pgrep /bin/blink)
+
+echo "All GPIOs to OFF"
+for GPIONR in 3 5; do
+    echo 0 > /sys/class/gpio/gpio$GPIONR/value
+done
